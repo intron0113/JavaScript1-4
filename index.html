@@ -1,1 +1,31 @@
-tset
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript課題1-4</title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    const items = ['=============================', '現在、持っているタスク一覧', '=============================', '0: 掃除', '1:買い物', '2:散歩'];
+
+    items.forEach(function (value) {
+      console.log(value);
+    });
+    const name = prompt("タスクを入力してください");
+    const subname = prompt("ジャンルを入力してください");
+    if (name && subname) {
+      alert("新しいタスクを入力しました。");
+      items.forEach(function (value) {
+        console.log(value);
+      });
+      prompt("「確認,追加,削除,完了」のいずれかを入力してください");
+    }
+
+  </script>
+
+</body>
+
+</html>
